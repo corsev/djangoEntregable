@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Serie</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="nombre">NOMBRE: </label><input type="text" id="nombre" name="nombre" value="">
+        <label for="genero">GENERO: </label><input type="text" id="genero" name="genero" value="">
+        <label for="plataforma">PLATAFORMA: </label><input type="text" id="plataforma" name="plataforma" value="">
+        <label for="capitulos">CAPITULOS: </label><input type="number" id="capitulos" name="capitulos" value="">
+        <label for="anio">AÑO: </label><input type="number" id="anio" name="anio" value="">
+        <input type="submit" value="Crear">
+    </form>
+</body>
+</html>

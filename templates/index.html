@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inicio</title>
+    </head>
+    <body>
+        <h1>Web de series</h1>
+        <ul>
+            <h1>Series</h1>
+            {% for serie in series %}
+                <h1>{{ serie.nombre }}</h1>
+                <li><b>Género</b><br>{{ serie.genero }}</li>
+                <li><b>Año</b><br>{{ serie.anio }}</li>
+                <li><b>Capítulos</b><br>{{ serie.capitulos }}</li>
+                <li><b>Plataforma</b><br>{{ serie.plataforma }}</li>
+
+            {% endfor %}
+        </ul>
+    </body>
+</html>
