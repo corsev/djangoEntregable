@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Crear Serie</title>
+    <title>Modificar Serie</title>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
@@ -27,40 +27,46 @@
     </div>
   </div>
 </nav>
-        <div class="container py-4">
+    <div class="container py-4">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-7 ">
-                    <h2 class="row d-flex justify-content-center">Creacion de Serie</h2>
+                    <h2 class="row d-flex justify-content-center">Modificar Serie</h2>
                     <form action="" method="post">
                         {% csrf_token %}
                         <div class="form-group">
+                            <label for="id" class="control-label">ID</label>
+                            <input type="number" class="form-control" id="id" name="id" value="{{ serie.id }}" readonly required>
+                        </div>
+                        <div class="form-group">
                             <label for="nombre" class="control-label">NOMBRE</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre de la Serie" value="">
+                            <input type="text" class="form-control" id="nombre" name="nombre"  value="{{ serie.nombre }}">
                         </div>
                         <div class="form-group">
                             <label for="genero" class="control-label">GENERO</label>
-                            <input type="text" class="form-control" id="genero" name="genero" placeholder="Genero de la Serie" value="">
+                            <input type="text" class="form-control" id="genero" name="genero"  value="{{ serie.genero }}">
                         </div>
                         <div class="form-group">
                             <label for="plataforma" class="control-label">PLATAFORMA</label>
-                            <input type="text" class="form-control" id="plataforma" name="plataforma" placeholder="Plataforma donde se emite la Serie" value="">
+                            <input type="text" class="form-control" id="plataforma" name="plataforma"  value="{{ serie.plataforma }}">
                         </div>
                         <div class="form-group">
                             <label for="capitulos" class="control-label">CAPITULOS</label>
-                            <input type="number" class="form-control" id="capitulos" name="capitulos" placeholder="Nº Capitulos de la Serie" value="">
+                            <input type="number" class="form-control" id="capitulos" name="capitulos"  value="{{ serie.capitulos }}">
                         </div>
                         <div class="form-group">
                             <label for="anio" class="control-label">AÑO</label>
-                            <input type="number" class="form-control" id="anio" name="anio" placeholder="Año de la Serie" value="">
+                            <input type="number" class="form-control" id="anio" name="anio" value="{{ serie.anio }}">
                         </div>
                         <br><br>
                         <div class="form-group row d-flex justify-content-center">
-                            <input type="submit" class="btn btn-primary" value="Crear">
+                            <input type="submit" class="btn btn-primary" value="Modificar">
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 

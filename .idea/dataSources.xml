@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="9ed19823-0890-4f24-9470-833bc4c44e8c">
+    <data-source source="LOCAL" name="db [2]" uuid="6532d5da-5505-465a-8567-5a48824cd8bf">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\daw20\PycharmProjects\flaskProject\djangoEntregable\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\Users\dragu\PycharmProjects\djangoEntregable1\db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>
