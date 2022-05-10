@@ -34,13 +34,18 @@ def modificar_serie(request,id):
         modificar_serie.anio = request.POST.get('anio')
         Serie.save(modificar_serie)
         return redirect("/seriesTV")
-def borrar_serie(request):
+def borrar_serie(request, id):
     if request.method == 'GET':
-        return render(request, 'borrar_serie.html')
+        eliminar_serie = Serie.objects.get(id=id)
+        return render(request, 'borrar_serie.html', {"serie":eliminar_serie})
     else:
-        serie_vieja = Serie()
-        serie_vieja.id = request.POST.get('id')
-        Serie.delete(serie_vieja)
+        eliminar_serie = Serie.objects.get(id=id)
+        eliminar_serie.nombre = request.POST.get ('nombre')
+        eliminar_serie.genero = request.POST.get ('genero')
+        eliminar_serie.plataforma = request.POST.get('plataforma')
+        eliminar_serie.capitulos = request.POST.get('capitulos')
+        eliminar_serie.anio = request.POST.get('anio')
+        Serie.delete(eliminar_serie)
         return redirect("/seriesTV")
 
 def ver_serie(request, id):
