@@ -36,23 +36,23 @@
                         {% csrf_token %}
                         <div class="form-group">
                             <label for="nombre" class="control-label">NOMBRE</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre de la Serie" value="">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre de la Serie" value="" required>
                         </div>
                         <div class="form-group">
                             <label for="genero" class="control-label">GENERO</label>
-                            <input type="text" class="form-control" id="genero" name="genero" placeholder="Genero de la Serie" value="">
+                            <input type="text" class="form-control" id="genero" name="genero" placeholder="Genero de la Serie" value="" required>
                         </div>
                         <div class="form-group">
                             <label for="plataforma" class="control-label">PLATAFORMA</label>
-                            <input type="text" class="form-control" id="plataforma" name="plataforma" placeholder="Plataforma donde se emite la Serie" value="">
+                            <input type="text" class="form-control" id="plataforma" name="plataforma" placeholder="Plataforma donde se emite la Serie" value="" required>
                         </div>
                         <div class="form-group">
                             <label for="capitulos" class="control-label">CAPITULOS</label>
-                            <input type="number" class="form-control" id="capitulos" name="capitulos" placeholder="Nº Capitulos de la Serie" value="">
+                            <input type="number" class="form-control" id="capitulos" name="capitulos" placeholder="Nº Capitulos de la Serie" value="" required>
                         </div>
                         <div class="form-group">
                             <label for="anio" class="control-label">AÑO</label>
-                            <input type="number" class="form-control" id="anio" name="anio" placeholder="Año de la Serie" value="">
+                            <input type="number" class="form-control" id="anio" name="anio" placeholder="Año de la Serie" value="" required>
                         </div>
                         <br><br>
                         <div class="form-group row d-flex justify-content-center">
