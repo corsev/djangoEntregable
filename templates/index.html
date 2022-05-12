@@ -27,9 +27,11 @@
   </div>
 </nav>
     <div class="container py-4">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center" >
             <div class="col-md-7 ">
+            <div class="bg-warning">
             <h2 class="row d-flex justify-content-center">Lista de Series</h2>
+            </div>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
@@ -44,7 +46,7 @@
                                 <tr>
                                     <td>{{forloop.counter}}</td>
                                     <td>{{ serie.nombre }}</td>
-                                    <td><a href="http://127.0.0.1:8000/seriesTV/seriesTV/ver_serie/{{ serie.id }}" class="btn btn-warning">Ver</a></td>
+                                    <td><a href="http://127.0.0.1:8000/seriesTV/seriesTV/ver_serie/{{ serie.id }}" class="btn btn-info">Ver</a></td>
                                     <td><a href="http://127.0.0.1:8000/seriesTV/seriesTV/borrar_serie/{{ serie.id }}" class="btn btn-success">Eliminar</a></td>
                                     <td><a href="http://127.0.0.1:8000/seriesTV/seriesTV/modificar_serie/{{ serie.id }}" class="btn btn-danger">Modificar</a></td>
                                 </tr>

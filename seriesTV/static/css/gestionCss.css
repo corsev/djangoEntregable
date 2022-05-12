@@ -3,11 +3,59 @@ th, td{
     vertical-align: middle;
 }
 
+
 .body2 {
     font-family: "Oswald", sans-serif;
     font-size: 16px;
-    background-image: url(https://w0.peakpx.com/wallpaper/930/384/HD-wallpaper-black-texture-black-design-fine-texture.jpg);
+    background-image: url(https://www.10wallpaper.com/wallpaper/2560x1600/1403/blue_unclear_image-HD_Widescreen_Wallpapers_2560x1600.jpg);
     background-repeat: no-repeat;
-	background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 790px;
+
+
+}
+
+.body3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    background-image: url(https://fondosmil.com/fondo/36834.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 790px;
+
+}
+
+.body4 {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    background-image: url(https://fondosmil.com/fondo/36828.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 790px;
+
+}
+
+.body5 {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    background-image: url(https://img.freepik.com/vector-gratis/curva-azul-ombre-sobre-fondo-azul-claro_53876-113099.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 790px;
+
+}
+
+.body6 {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    background-image: url(https://www.wallpapertip.com/wmimgs/80-807379_blur-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 790px;
 
 }
